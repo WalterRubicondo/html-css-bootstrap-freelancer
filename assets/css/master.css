@@ -1,9 +1,6 @@
-
-
 .navbar-default {
   background-color: #2C3E50;
   color: rgb(255, 255, 255);
-  margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
@@ -11,6 +8,11 @@
 .navbar-default .navbar-brand {
   color: rgb(255, 255, 255);
   font-weight: 700;
+}
+
+.bg-blue {
+  background-color: #2C3E50;
+  color: rgb(255, 255, 255);
 }
 
 .bg-green {
@@ -29,11 +31,10 @@
   color: rgb(255, 255, 255);
 }
 
-img {
+.avatar {
   width: 200px;
   margin-top: 100px;
 }
-
 
 .divisor {
   margin: 20px 0;
@@ -43,6 +44,21 @@ img {
   content: "";
   border: 2px solid rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 75px;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.divisor-black {
+  margin: 20px 0;
+}
+
+.divisor-black:before, .divisor-black:after {
+  content: "";
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   display: inline-block;
   width: 75px;
   border-radius: 5px;
@@ -69,21 +85,56 @@ p {
   padding-bottom: 50px;
 }
 
-@media all and (min-width:768px) {
-
-
-
+.main-img {
+  width: 350px;
+  border-radius: 10px;
 }
+
+.btn-default {
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 188, 156);
+  border-color: rgb(255, 255, 255);
+}
+
+.btn {
+  border: 2px solid;
+}
+
+.fa-download {
+  margin-right: 10px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 16px 16px;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+footer i {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* @media all and (min-width:768px) {
+
+} */
 
 
 @media all and (min-width: 1200px) {
 
-  h1 {
-    font-size: 68px;
+  header h1 {
+    font-size: 64px;
   }
 
-  p {
+  header p {
     font-size: 24px;
+  }
+
+  .main-img {
+    width: 350px;
   }
 
 }
